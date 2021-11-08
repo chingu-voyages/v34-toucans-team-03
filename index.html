@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My schedule</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/dist/css/bootstrap.min.css">
+</head>
+<body">
+<nav class="navbar navbar-expand bg-light navbar-light p-5">
+	<div class="container">
+		<a href="#" class="navbar-brand"> my schedule</a>
+		<ul class="navbar-nav">
+			<li class="navbar-item">
+				<a href="index.html" class="nav-link">
+					Home
+				</a>
+			</li>
+			<li class="navbar-item">
+				<a href="list.html" class="nav-link">
+					List
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--main section-->
+<section class="bg-light text-dark">
+	<div class="container">
+		<!--dates-->
+		<div class="d-flex justify-content-start">
+			<h1>Today :</h1>
+			<h3 id="current-date" class="align-self-end">Mon 1st may 2021</h3>
+		</div>
+		<div class="p-5 h5" id="current-task-container">
+				<label for="shower" class="custom1">
+				<input type="checkbox" name="shower"> Take shower
+				</label>
+				<label for="execises" class="custom1">
+				<input type="checkbox" name="execises"> Take exercises
+				</label>
+				<label for="read" class="custom1">
+				<input type="checkbox" name="read"> Read Book
+				</label>
+				<label for="office" class="custom1">
+				<input type="checkbox" name="shower"> Go to office
+				</label>
+				<label for="meeting" class="custom1">
+				<input type="checkbox" name="meeting"> Attend meeting
+				</label>
+
+				<label id="last-label">
+					
+				</label>
+		</div>
+		<div class="text-center mb-5 py-3">
+			<input type="text" placeholder="new task here" id="today-new-task-input"><span><button class="btn btn-secondary" id="today-new-task-btn" type="button"> add new task</button></span>
+		</div>
+	</div>
+</section>
+
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
